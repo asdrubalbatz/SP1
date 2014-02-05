@@ -3,6 +3,7 @@ package com.asdrubal.proyecto;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.text.util.Linkify;
 import android.view.Menu;
 import android.widget.TextView;
 
@@ -19,20 +20,23 @@ public class TiendaDetalle extends Activity {
 		Tienda t = DatosdeTiendas.getTienda(texto);
 		
 		TextView nombreTienda = (TextView)findViewById(R.id.nombreTienda);
-		nombreTienda.setText(texto);
+		nombreTienda.setText(t.nombre);
 		
 		TextView direccionTienda = (TextView)findViewById(R.id.direccionTienda);
 		direccionTienda.setText(t.direccion);
-		
+				
 		TextView telefonoTienda = (TextView)findViewById(R.id.telefonoTienda);
 		telefonoTienda.setText(t.telefono);
+		Linkify.addLinks(telefonoTienda, Linkify.ALL);
 		
 		TextView webTienda = (TextView)findViewById(R.id.webTienda);
 		webTienda.setText(t.website);
+		Linkify.addLinks(webTienda, Linkify.ALL);
 		
 		TextView emailTienda = (TextView)findViewById(R.id.emailTienda);
 		emailTienda.setText(t.email);
-
+		Linkify.addLinks(emailTienda, Linkify.ALL);
+		
 		TextView horariosTienda = (TextView)findViewById(R.id.horariosTienda);
 		horariosTienda.setText(t.horarios);
 
