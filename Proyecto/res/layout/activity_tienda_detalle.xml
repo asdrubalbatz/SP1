@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TiendaDetalle" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="27dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nombreTienda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+        <TextView
+            android:id="@+id/direccionTienda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+        
+        <TextView
+            android:id="@+id/telefonoTienda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+
+       <TextView
+            android:id="@+id/webTienda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+
+       <TextView
+            android:id="@+id/emailTienda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+       
+
+       <TextView
+           android:id="@+id/horarios"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Horarios: "
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+           android:id="@+id/horariosTienda"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/hello_world" />
+        
+        </LinearLayout>
+
+
+        <requestFocus />
+
+
+</RelativeLayout>
